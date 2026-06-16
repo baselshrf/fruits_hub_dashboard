@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:e_commerce_dashboard/features/add_product/data/review_model.dart';
 import 'package:e_commerce_dashboard/features/add_product/domain/entities/add_product_input_entity.dart';
 
 class AddProductInputModel {
@@ -16,6 +17,7 @@ class AddProductInputModel {
   final num avgRating = 0;
   final num ratingCount = 0;
   final int unitAmount;
+  final List<ReviewModel> reviews;
 
   AddProductInputModel({
     required this.expirationsMonths,
@@ -29,6 +31,7 @@ class AddProductInputModel {
     required this.isFeatured,
     this.imageUrl,
     required this.isOrganic,
+    required this.reviews,
   });
 
   factory AddProductInputModel.fromEntity(
@@ -46,6 +49,9 @@ class AddProductInputModel {
       isFeatured: addProductInputEntity.isFeatured,
       imageUrl: addProductInputEntity.imageUrl,
       isOrganic: addProductInputEntity.isOrganic,
+      reviews: addProductInputEntity.reviews
+          .map((e) => ReviewModel.fromEntity(e))
+          .toList(),
     );
   }
 
@@ -61,6 +67,7 @@ class AddProductInputModel {
       'numberOfCalories': numberOfCalories,
       'unitAmount': unitAmount,
       'isOrganic': isOrganic,
+      'reviews': reviews.map((e) => e.toJson()).toList(),
     };
   }
 }
