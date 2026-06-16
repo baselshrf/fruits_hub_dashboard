@@ -3,9 +3,11 @@ import 'dart:io';
 import 'package:e_commerce_dashboard/core/widgets/custom_button.dart';
 import 'package:e_commerce_dashboard/core/widgets/custom_text_field.dart';
 import 'package:e_commerce_dashboard/features/add_product/domain/entities/add_product_input_entity.dart';
+import 'package:e_commerce_dashboard/features/add_product/presentation/manager/add_product/add_product_cubit.dart';
 import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/image_field.dart';
 import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/is_featured_check_box.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AddProductViewBody extends StatefulWidget {
   const AddProductViewBody({super.key});
@@ -94,6 +96,8 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                         image: image!,
                         isFeatured: isFeatured,
                       );
+
+                      context.read<AddProductCubit>().addProduct(input);
                     } else {
                       autovalidateMode = AutovalidateMode.always;
                       setState(() {});
