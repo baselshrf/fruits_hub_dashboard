@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:e_commerce_dashboard/core/widgets/custom_button.dart';
 import 'package:e_commerce_dashboard/core/widgets/custom_text_field.dart';
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/add_product_input_entity.dart';
+import 'package:e_commerce_dashboard/features/add_product/domain/entities/product_entity.dart';
 import 'package:e_commerce_dashboard/features/add_product/domain/entities/review_entity.dart';
 import 'package:e_commerce_dashboard/features/add_product/presentation/manager/add_product/add_product_cubit.dart';
 import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/image_field.dart';
@@ -122,7 +122,7 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                   if (image != null) {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
-                      AddProductInputEntity input = AddProductInputEntity(
+                      ProductEntity input = ProductEntity(
                         reviews: [
                           ReviewEntity(
                             name: 'tharwat',

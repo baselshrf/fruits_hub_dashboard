@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:e_commerce_dashboard/features/add_product/data/review_model.dart';
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/add_product_input_entity.dart';
+import 'package:e_commerce_dashboard/features/add_product/domain/entities/product_entity.dart';
 
-class AddProductInputModel {
+class ProductModel {
   final String name;
   final String code;
   final String description;
@@ -18,8 +18,9 @@ class AddProductInputModel {
   final num ratingCount = 0;
   final int unitAmount;
   final List<ReviewModel> reviews;
+  final int sellingCount;
 
-  AddProductInputModel({
+  ProductModel({
     required this.expirationsMonths,
     required this.numberOfCalories,
     required this.unitAmount,
@@ -32,24 +33,23 @@ class AddProductInputModel {
     this.imageUrl,
     required this.isOrganic,
     required this.reviews,
+    this.sellingCount = 0,
   });
 
-  factory AddProductInputModel.fromEntity(
-    AddProductInputEntity addProductInputEntity,
-  ) {
-    return AddProductInputModel(
-      name: addProductInputEntity.name,
-      code: addProductInputEntity.code,
-      description: addProductInputEntity.description,
-      price: addProductInputEntity.price,
-      image: addProductInputEntity.image,
-      expirationsMonths: addProductInputEntity.expirationsMonths,
-      numberOfCalories: addProductInputEntity.numberOfCalories,
-      unitAmount: addProductInputEntity.unitAmount,
-      isFeatured: addProductInputEntity.isFeatured,
-      imageUrl: addProductInputEntity.imageUrl,
-      isOrganic: addProductInputEntity.isOrganic,
-      reviews: addProductInputEntity.reviews
+  factory ProductModel.fromEntity(ProductEntity productEntity) {
+    return ProductModel(
+      name: productEntity.name,
+      code: productEntity.code,
+      description: productEntity.description,
+      price: productEntity.price,
+      image: productEntity.image,
+      expirationsMonths: productEntity.expirationsMonths,
+      numberOfCalories: productEntity.numberOfCalories,
+      unitAmount: productEntity.unitAmount,
+      isFeatured: productEntity.isFeatured,
+      imageUrl: productEntity.imageUrl,
+      isOrganic: productEntity.isOrganic,
+      reviews: productEntity.reviews
           .map((e) => ReviewModel.fromEntity(e))
           .toList(),
     );
@@ -68,6 +68,7 @@ class AddProductInputModel {
       'unitAmount': unitAmount,
       'isOrganic': isOrganic,
       'reviews': reviews.map((e) => e.toJson()).toList(),
+      'sellingCount': sellingCount,
     };
   }
 }

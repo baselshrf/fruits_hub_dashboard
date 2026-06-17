@@ -1,6 +1,7 @@
 import 'package:e_commerce_dashboard/core/helper_functions/on_generate_routes.dart';
 import 'package:e_commerce_dashboard/core/services/custom_bloc_observer.dart';
 import 'package:e_commerce_dashboard/core/services/get_it_services.dart';
+import 'package:e_commerce_dashboard/core/services/supabase_stoarge.dart';
 import 'package:e_commerce_dashboard/features/dashboard/views/dashboard_view.dart';
 import 'package:e_commerce_dashboard/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -9,6 +10,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await SupabaseStoargeService.initSupabase();
+
+  await SupabaseStoargeService.createBuckets('fruits_images');
 
   Bloc.observer = CustomBlocObserver();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
