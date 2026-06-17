@@ -55,7 +55,7 @@ class AddProductInputModel {
     );
   }
 
-  toJson() {
+  Map<String, Object?> toJson() {
     return {
       'name': name,
       'code': code,

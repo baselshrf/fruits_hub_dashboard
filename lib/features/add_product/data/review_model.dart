@@ -34,7 +34,7 @@ class ReviewModel {
       reviewDescription: json['reviewDescription'],
     );
   }
-  toJson() {
+  Map<String, Object> toJson() {
     return {
       'name': name,
       'image': image,
