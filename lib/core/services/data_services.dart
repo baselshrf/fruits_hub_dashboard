@@ -14,4 +14,9 @@ abstract class DatabaseService {
     required String path,
     required String docuementId,
   });
+
+  Stream<dynamic> streamData({
+    required String path,
+    Map<String, dynamic>? query,
+  });
 }

@@ -1,3 +1,4 @@
+import 'package:e_commerce_dashboard/core/enums/order_enum.dart';
 import 'package:e_commerce_dashboard/features/orders/data/models/order_product_model.dart';
 import 'package:e_commerce_dashboard/features/orders/data/models/shipping_address_model.dart';
 import 'package:e_commerce_dashboard/features/orders/domain/entities/order_entity.dart';
@@ -8,8 +9,10 @@ class OrderModel {
   final ShippingAddressModel shippingAddressModel;
   final List<OrderProductModel> orderProducts;
   final String paymentMethod;
+  final String? status;
 
   OrderModel({
+    this.status,
     required this.totalPrice,
     required this.uId,
     required this.shippingAddressModel,
@@ -20,12 +23,13 @@ class OrderModel {
   factory OrderModel.fromJson(Map<String, dynamic> json) => OrderModel(
     totalPrice: json['totalPrice'],
     uId: json['uId'],
+    status: json['status'],
     shippingAddressModel: ShippingAddressModel.fromJson(
       json['shippingAddressModel'],
     ),
-    orderProducts: json['orderProducts']
-        .map((e) => OrderProductModel.fromJson(e))
-        .toList(),
+    orderProducts: List<OrderProductModel>.from(
+      json['orderProducts'].map((e) => OrderProductModel.fromJson(e)),
+    ),
     paymentMethod: json['paymentMethod'],
   );
   toJson() => {
@@ -41,8 +45,16 @@ class OrderModel {
   toEntity() => OrderEntity(
     totalPrice: totalPrice,
     uId: uId,
+    status: fetchEnum(),
     shippingAddressModel: shippingAddressModel.toEntity(),
     orderProducts: orderProducts.map((e) => e.toEntity()).toList(),
     paymentMethod: paymentMethod,
   );
+
+  OrderEnum fetchEnum() {
+    return OrderEnum.values.firstWhere((e) {
+      var enumStatus = e.name.toString();
+      return enumStatus == (status ?? 'pending');
+    });
+  }
 }
