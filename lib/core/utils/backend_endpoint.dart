@@ -5,4 +5,6 @@ class BackendEndpoint {
 
   static const images = 'images';
   static const productsCollection = 'products';
+
+  static const getOrders = 'Orders';
 }
