@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:e_commerce_dashboard/core/services/stoarage_service.dart';
+import 'package:e_commerce_dashboard/core/utils/keys.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:path/path.dart' as b;
 
@@ -26,7 +27,7 @@ class SupabaseStoargeService implements StoarageService {
   static initSupabase() async {
     _supabase = await Supabase.initialize(
       url: kSupabaseUrl,
-      anonKey: kSupabaseKey,
+      publishableKey: kSupabaseKey,
     );
   }
 

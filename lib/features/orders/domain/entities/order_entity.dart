@@ -9,6 +9,7 @@ class OrderEntity {
   final List<OrderProductEntity> orderProducts;
   final String paymentMethod;
   final OrderEnum status;
+  final String orderID;
 
   OrderEntity({
     required this.totalPrice,
@@ -17,5 +18,6 @@ class OrderEntity {
     required this.orderProducts,
     required this.paymentMethod,
     required this.status,
+    required this.orderID,
   });
 }

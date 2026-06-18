@@ -56,5 +56,6 @@ OrderEntity getDummyOrder() {
     shippingAddressModel: shippingAddress,
     orderProducts: orderProducts,
     paymentMethod: 'Cash',
+    orderID: '12345',
   );
 }
