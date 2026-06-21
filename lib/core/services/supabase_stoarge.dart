@@ -8,7 +8,7 @@ import 'package:path/path.dart' as b;
 class SupabaseStoargeService implements StoarageService {
   static late Supabase _supabase;
 
-  static createBuckets(String bucketName) async {
+  static Future<void> createBuckets(String bucketName) async {
     var buckets = await _supabase.client.storage.listBuckets();
 
     bool isBucketExits = false;
@@ -24,7 +24,7 @@ class SupabaseStoargeService implements StoarageService {
     }
   }
 
-  static initSupabase() async {
+  static Future<void> initSupabase() async {
     _supabase = await Supabase.initialize(
       url: kSupabaseUrl,
       publishableKey: kSupabaseKey,
@@ -38,6 +38,10 @@ class SupabaseStoargeService implements StoarageService {
     var resutl = await _supabase.client.storage
         .from('fruits_images')
         .upload('$path/$fileName.$extensionName', file);
+
+    final String publicUrl = _supabase.client.storage
+        .from('fruits_images')
+        .getPublicUrl('$path/$fileName.$extensionName');
 
     return resutl;
   }

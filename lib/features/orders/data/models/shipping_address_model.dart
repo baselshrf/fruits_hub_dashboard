@@ -32,7 +32,7 @@ class ShippingAddressModel {
       email: json['email'],
     );
   }
-  toJson() {
+  Map<String, String?> toJson() {
     return {
       'name': name,
       'phone': phone,
@@ -43,7 +43,7 @@ class ShippingAddressModel {
     };
   }
 
-  toEntity() {
+  ShippingAddressEntity toEntity() {
     return ShippingAddressEntity(
       name: name,
       phone: phone,

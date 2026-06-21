@@ -35,7 +35,7 @@ class OrderModel {
     ),
     paymentMethod: json['paymentMethod'],
   );
-  toJson() => {
+  Map<String, dynamic> toJson() => {
     'totalPrice': totalPrice,
     'uId': uId,
     'status': 'pending',
@@ -45,7 +45,7 @@ class OrderModel {
     'paymentMethod': paymentMethod,
   };
 
-  toEntity() => OrderEntity(
+  OrderEntity toEntity() => OrderEntity(
     totalPrice: totalPrice,
     orderID: orderID,
     uId: uId,
