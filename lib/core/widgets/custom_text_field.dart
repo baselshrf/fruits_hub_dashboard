@@ -1,4 +1,4 @@
-import 'package:e_commerce_dashboard/core/utils/app_text_styles.dart';
+import 'package:fruits_hub_dashboard/core/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {

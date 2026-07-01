@@ -1,4 +1,4 @@
-import 'package:e_commerce_dashboard/features/orders/domain/entities/order_product_entity.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/entities/order_product_entity.dart';
 
 class OrderProductModel {
   final String name;

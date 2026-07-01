@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/review_entity.dart';
+import 'package:fruits_hub_dashboard/features/add_product/domain/entities/review_entity.dart';
 
 class ProductEntity {
   final String name;

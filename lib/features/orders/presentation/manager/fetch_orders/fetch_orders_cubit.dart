@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:e_commerce_dashboard/features/orders/domain/entities/order_entity.dart';
-import 'package:e_commerce_dashboard/features/orders/domain/repos/orders_repo.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/entities/order_entity.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/repos/orders_repo.dart';
 import 'package:meta/meta.dart';
 
 part 'fetch_orders_state.dart';

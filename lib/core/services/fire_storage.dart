@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:e_commerce_dashboard/core/services/stoarage_service.dart';
+import 'package:fruits_hub_dashboard/core/services/stoarage_service.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:path/path.dart' as b;
 

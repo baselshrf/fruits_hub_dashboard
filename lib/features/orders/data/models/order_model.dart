@@ -1,7 +1,7 @@
-import 'package:e_commerce_dashboard/core/enums/order_enum.dart';
-import 'package:e_commerce_dashboard/features/orders/data/models/order_product_model.dart';
-import 'package:e_commerce_dashboard/features/orders/data/models/shipping_address_model.dart';
-import 'package:e_commerce_dashboard/features/orders/domain/entities/order_entity.dart';
+import 'package:fruits_hub_dashboard/core/enums/order_enum.dart';
+import 'package:fruits_hub_dashboard/features/orders/data/models/order_product_model.dart';
+import 'package:fruits_hub_dashboard/features/orders/data/models/shipping_address_model.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/entities/order_entity.dart';
 
 class OrderModel {
   final double totalPrice;

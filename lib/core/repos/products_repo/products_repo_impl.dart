@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerce_dashboard/core/errors/failures.dart';
-import 'package:e_commerce_dashboard/core/repos/products_repo/products_repo.dart';
-import 'package:e_commerce_dashboard/core/services/data_services.dart';
-import 'package:e_commerce_dashboard/core/utils/backend_endpoint.dart';
-import 'package:e_commerce_dashboard/features/add_product/data/product_model.dart';
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/product_entity.dart';
+import 'package:fruits_hub_dashboard/core/errors/failures.dart';
+import 'package:fruits_hub_dashboard/core/repos/products_repo/products_repo.dart';
+import 'package:fruits_hub_dashboard/core/services/data_services.dart';
+import 'package:fruits_hub_dashboard/core/utils/backend_endpoint.dart';
+import 'package:fruits_hub_dashboard/features/add_product/data/product_model.dart';
+import 'package:fruits_hub_dashboard/features/add_product/domain/entities/product_entity.dart';
 
 class ProductsRepoImpl implements ProductsRepo {
   final DatabaseService databaseService;

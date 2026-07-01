@@ -1,6 +1,6 @@
 {
-    "name": "e_commerce_dashboard",
-    "short_name": "e_commerce_dashboard",
+    "name": "fruits_hub_dashboard",
+    "short_name": "fruits_hub_dashboard",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

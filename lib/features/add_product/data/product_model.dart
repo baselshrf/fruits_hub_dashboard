@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:e_commerce_dashboard/features/add_product/data/review_model.dart';
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/product_entity.dart';
+import 'package:fruits_hub_dashboard/features/add_product/data/review_model.dart';
+import 'package:fruits_hub_dashboard/features/add_product/domain/entities/product_entity.dart';
 
 class ProductModel {
   final String name;

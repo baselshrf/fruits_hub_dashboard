@@ -1,10 +1,10 @@
-import 'package:e_commerce_dashboard/core/helper_functions/get_order_dummy_data.dart';
-import 'package:e_commerce_dashboard/core/services/get_it_services.dart';
-import 'package:e_commerce_dashboard/features/orders/domain/repos/orders_repo.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/manager/fetch_orders/fetch_orders_cubit.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/manager/update_order/update_order_cubit.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/views/widgets/orders_view_body.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/views/widgets/update_order_builder.dart';
+import 'package:fruits_hub_dashboard/core/helper_functions/get_order_dummy_data.dart';
+import 'package:fruits_hub_dashboard/core/services/get_it_services.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/repos/orders_repo.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/manager/fetch_orders/fetch_orders_cubit.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/manager/update_order/update_order_cubit.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/views/widgets/orders_view_body.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/views/widgets/update_order_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:skeletonizer/skeletonizer.dart';

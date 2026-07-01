@@ -1,7 +1,7 @@
-import 'package:e_commerce_dashboard/core/helper_functions/build_error_bar.dart';
-import 'package:e_commerce_dashboard/core/widgets/custom_progress_hud.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/manager/add_product/add_product_cubit.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/add_product_view_body.dart';
+import 'package:fruits_hub_dashboard/core/helper_functions/build_error_bar.dart';
+import 'package:fruits_hub_dashboard/core/widgets/custom_progress_hud.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/manager/add_product/add_product_cubit.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/views/widgets/add_product_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

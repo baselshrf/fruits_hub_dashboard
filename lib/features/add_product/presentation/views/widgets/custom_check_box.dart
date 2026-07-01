@@ -1,4 +1,4 @@
-import 'package:e_commerce_dashboard/core/utils/app_colors.dart';
+import 'package:fruits_hub_dashboard/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomCheckBox extends StatelessWidget {

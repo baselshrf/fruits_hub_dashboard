@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:e_commerce_dashboard/features/orders/domain/repos/orders_repo.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/repos/orders_repo.dart';
 
 import '../../../../../core/enums/order_enum.dart';
 

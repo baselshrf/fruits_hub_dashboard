@@ -1,4 +1,4 @@
-import 'package:e_commerce_dashboard/features/dashboard/views/widgets/dashboard_view_body.dart';
+import 'package:fruits_hub_dashboard/features/dashboard/views/widgets/dashboard_view_body.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {

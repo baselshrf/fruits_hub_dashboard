@@ -1,4 +1,4 @@
-package com.example.e_commerce_dashboard
+package com.example.fruits_hub_dashboard
 
 import io.flutter.embedding.android.FlutterActivity
 

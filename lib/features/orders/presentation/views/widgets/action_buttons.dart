@@ -1,6 +1,6 @@
-import 'package:e_commerce_dashboard/core/enums/order_enum.dart';
-import 'package:e_commerce_dashboard/features/orders/domain/entities/order_entity.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/manager/update_order/update_order_cubit.dart';
+import 'package:fruits_hub_dashboard/core/enums/order_enum.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/entities/order_entity.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/manager/update_order/update_order_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

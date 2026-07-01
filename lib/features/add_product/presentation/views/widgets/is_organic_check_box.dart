@@ -1,5 +1,5 @@
-import 'package:e_commerce_dashboard/core/utils/app_text_styles.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/custom_check_box.dart';
+import 'package:fruits_hub_dashboard/core/utils/app_text_styles.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/views/widgets/custom_check_box.dart';
 import 'package:flutter/material.dart';
 
 class IsOrganciCheckBox extends StatefulWidget {

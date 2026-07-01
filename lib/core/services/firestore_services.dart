@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:e_commerce_dashboard/core/services/data_services.dart';
+import 'package:fruits_hub_dashboard/core/services/data_services.dart';
 
 class FireStoreService implements DatabaseService {
   FirebaseFirestore firestore = FirebaseFirestore.instance;

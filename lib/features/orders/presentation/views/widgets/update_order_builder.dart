@@ -1,5 +1,5 @@
-import 'package:e_commerce_dashboard/core/helper_functions/build_error_bar.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/manager/update_order/update_order_cubit.dart';
+import 'package:fruits_hub_dashboard/core/helper_functions/build_error_bar.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/manager/update_order/update_order_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';

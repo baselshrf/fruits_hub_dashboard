@@ -1,5 +1,5 @@
-import 'package:e_commerce_dashboard/features/orders/domain/entities/order_entity.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/views/widgets/order_item.dart';
+import 'package:fruits_hub_dashboard/features/orders/domain/entities/order_entity.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/views/widgets/order_item.dart';
 import 'package:flutter/material.dart';
 
 class OrdersItemsListView extends StatelessWidget {

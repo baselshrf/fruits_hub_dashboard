@@ -1,6 +1,6 @@
-import 'package:e_commerce_dashboard/core/widgets/custom_button.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/views/add_product_view.dart';
-import 'package:e_commerce_dashboard/features/orders/presentation/views/order_view.dart';
+import 'package:fruits_hub_dashboard/core/widgets/custom_button.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/views/add_product_view.dart';
+import 'package:fruits_hub_dashboard/features/orders/presentation/views/order_view.dart';
 import 'package:flutter/material.dart';
 
 class DashboardViewBody extends StatelessWidget {

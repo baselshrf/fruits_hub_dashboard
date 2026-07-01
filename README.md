@@ -1,4 +1,4 @@
-# e_commerce_dashboard
+# fruits_hub_dashboard
 
 A new Flutter project.
 

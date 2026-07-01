@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'package:e_commerce_dashboard/core/widgets/custom_button.dart';
-import 'package:e_commerce_dashboard/core/widgets/custom_text_field.dart';
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/product_entity.dart';
-import 'package:e_commerce_dashboard/features/add_product/domain/entities/review_entity.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/manager/add_product/add_product_cubit.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/image_field.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/is_featured_check_box.dart';
-import 'package:e_commerce_dashboard/features/add_product/presentation/views/widgets/is_organic_check_box.dart';
+import 'package:fruits_hub_dashboard/core/widgets/custom_button.dart';
+import 'package:fruits_hub_dashboard/core/widgets/custom_text_field.dart';
+import 'package:fruits_hub_dashboard/features/add_product/domain/entities/product_entity.dart';
+import 'package:fruits_hub_dashboard/features/add_product/domain/entities/review_entity.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/manager/add_product/add_product_cubit.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/views/widgets/image_field.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/views/widgets/is_featured_check_box.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/views/widgets/is_organic_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
